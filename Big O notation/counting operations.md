@@ -1,6 +1,6 @@
 ### Counting operations method in Big O
-With this method we measure the perfomance of our algorithm by counting the number of operations instead of manually timing it 
-because the number of operations in your code is easy to standadize and remains consistend regaldless of computer, compared to manually timing our code.
+With this method we measure the perfomance of our algorithm by counting number of operations instead of manually timing it 
+because the number of operations in your code is easy to standardize and remains consistent regaldless of computer, compared to manually timing our code.
 
 so let's count operations in function `sumUpTo`
 
