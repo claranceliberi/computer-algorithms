@@ -20,4 +20,4 @@ suprisingly the time took to accomplish task is
 ![image](https://user-images.githubusercontent.com/60586899/117759013-52578900-b223-11eb-910e-97ac0d8a9e10.png)
 
 
-as you can see function A with 3 operations took 0 seconds ( not actually 0 in time but there are little microseconds which are rounded to 0) while B with 4 operations took 2.97 secons
+as you can see function A with 3 operations took 0 seconds ( not actually 0 in time but there are little microseconds which are rounded to 0) while B with 4 operations took 2.97 seconds
