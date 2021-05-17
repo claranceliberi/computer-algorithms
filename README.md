@@ -3,7 +3,7 @@
 ## Table of contents
 
 1. Introduction to Algorithm 
-2. Algorithm Analysis & Complexity
+2. Algorithm Analysis & Complexity <br>
     2.1 Definitions
     2.2 Complexity measures of the efficiency of an algorithm
     2.3 Algorithm Efficiency
@@ -89,6 +89,7 @@ Suprisingly, the time taken to accomplish the task is
 as you can see function A with 3 operations took 0 seconds ( not actually 0 in time but there are little microseconds which are rounded to 0) while B with 4 operations took 2.97 seconds
 <br>
 2. *Step counts*
+<br>
 The step count method is one of the methods to analyze the algorithm, In this method, we count the number of times one instruction is executing
  from that, we will try to find the complexity of the algorithm 
  
@@ -125,6 +126,7 @@ return sum;                  // 1 step * 1
 }
 ```
 3. *Counting cache misses*
+<br>
 In algorithm analysis, we count the operations and steps. This is basically justified when the computer takes more time to perform an operation than it took to fetch the data needed for that operation. Nowadays the cost of performing an operation is significantly lower than the cost of fetching data from memory.
 
 The run time of many algorithms is dominated by the number of memory references (number of cache misses) rather than by the number of operations. So, when we will try to desing some algorithms, we have to focus on reducing not only the number of operations but also the number of memory accesses. Also, have to focus on designing algorithms that hide memory latency.
