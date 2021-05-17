@@ -36,7 +36,7 @@ There are only two main complexity measuere of an algorithm
 
  - *Space complexity* is a function describing the amount of memory (space) an algorithm takes in terms of the amount of input to the algorithm. We often speak of "extra" memory needed, not counting the memory needed to store the input itself. Again, we use natural (but fixed-length) units to measure this. We can use bytes, but it's easier to use, say, number of integers used, number of fixed-sized structures, etc. In the end, the function we come up with will be independent of the actual number of bytes needed to represent the unit. Space complexity is sometimes ignored because the space used is minimal and/or obvious, but sometimes it becomes as important an issue as time.
 
- ### 2.2 Algorithm Efficiency
+ ### 2.3 Algorithm Efficiency
  Algorithm efficiency achieved when some criteria are used to design an alogorithm , among these criteria we have:
 
     - *Correctness* : the algorithm / program does what what we expect it to do, without errors
@@ -51,3 +51,12 @@ Realistically, for efficiency we will evaluate if the results are obtained withi
 
 <br>
 Efficiency is not optional, since a program might result unusable in practice if it takes too long to produce its output. However, some criteria like portability, modularity, maintainability, … are always useful, but in a sense also optional.
+
+The efficiency of an algorithm to solve a particular problem is measured as a function of the problem size.
+If `n` is the size of the problem, `t` is time complexity and `s` the space complexity, there is a relationship between the size `n` and time `t`, and a relationship between the size `n` and space `s`.
+For example, we might say "this algorithm takes n<sup>2</sup> time," where `n` is the number of items in the input. Or we might say "this algorithm takes constant extra space," because the amount of extra memory needed doesn't vary with the number of items processed.
+<br>
+<br>
+A function expressing the relationship between `n` and `t` is usually much more complex, and calculating such a function is important only in regard to large bodies of data; any terms that do not substantially change the function’s magnitude should be eliminated from the function.
+The resulting function gives only an approximate measure of efficiency of the original function. However, this approximation is sufficiently close to the original, especially for a function that processes large quantities of data.
+This measure of efficiency is called *asymptotic complexity* and is used when disregarding certain terms of a function to express the efficiency of an algorithm or when calculating a function is difficult or impossible and only approximations can be found.
