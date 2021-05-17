@@ -2,12 +2,12 @@
 
 ## Table of contents
 
-1. Introduction to Algorithm 
+1. [Introduction to Algorithm](#introduction-to-algorithm ) 
 2. Algorithm Analysis & Complexity <br>
-    2.1 Definitions
-    2.2 Complexity measures of the efficiency of an algorithm
-    2.3 Algorithm Efficiency
-    2.4 Methods used to approximate the complexity of an algorithm
+    2.1 Definitions <br>
+    2.2 Complexity measures of the efficiency of an algorithm <br>
+    2.3 Algorithm Efficiency <br>
+    2.4 [Methods used to approximate the complexity of an algorithm](#methods-used-to-approximate-the-complexity-of-an-algorithm) <br>
 
 
 ## 1. Introduction to Algorithm 
@@ -65,6 +65,7 @@ This measure of efficiency is called *asymptotic complexity* and is used when di
 
  ### 2.4 Methods used to approximate the complexity of an algorithm
 1. *Operation counts*
+<br>
 With this method we measure the perfomance of our algorithm by counting number of operations instead of manually timing it 
 because the number of operations in your code is easy to standardize and remains consistent regaldless of computer, compared to manually timing our code.
 
