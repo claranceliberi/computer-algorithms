@@ -6,6 +6,7 @@
     2. Algorithm Analysis & Complexity
         2.1 Definitions
         2.2 Complexity measures of the efficiency of an algorithm
+        2.3 Algorithm Efficiency
 
 
 ## 1. Introduction to Algorithm 
@@ -34,3 +35,19 @@ There are only two main complexity measuere of an algorithm
  - *Time complexity* is a function describing the amount of time an algorithm takes in terms of the amount of input to the algorithm. "Time" can mean the number of memory accesses performed, the number of comparisons between integers, the number of times some inner loop is executed, or some other natural unit related to the amount of real time the algorithm will take. We try to keep this idea of time separate from "wall clock" time, since many factors unrelated to the algorithm itself can affect the real time (like the language used, type of computing hardware, proficiency of the programmer, optimization in the compiler, etc.). It turns out that, if we chose the units wisely, all of the other stuff doesn't matter and we can get an independent measure of the efficiency of the algorithm
 
  - *Space complexity* is a function describing the amount of memory (space) an algorithm takes in terms of the amount of input to the algorithm. We often speak of "extra" memory needed, not counting the memory needed to store the input itself. Again, we use natural (but fixed-length) units to measure this. We can use bytes, but it's easier to use, say, number of integers used, number of fixed-sized structures, etc. In the end, the function we come up with will be independent of the actual number of bytes needed to represent the unit. Space complexity is sometimes ignored because the space used is minimal and/or obvious, but sometimes it becomes as important an issue as time.
+
+ ### 2.2 Algorithm Efficiency
+ Algorithm efficiency achieved when some criteria are used to design an alogorithm , among these criteria we have:
+
+    - *Correctness* : the algorithm / program does what what we expect it to do, without errors
+    - *Space*: how much memory does the program need to produce desired output ?
+    - *Speed of a computer* : on which the program will run (e.g., a smartphone, a google server , AWS, ...)
+    - *Time*: how long will it take the program to produce disired output?
+    - *The programming language*: used to implement algorithm (e.g., C, Python, Java, Javascript, ...)
+    - *The size of input*: ammount of value of input that is going to be inputed/ proccessed by algorithm
+
+
+Realistically, for efficiency we will evaluate if the results are obtained within a time frame which is compatible with the time restrictions of the scenario of use of the program (and the shorter the time the better)
+
+<br>
+Efficiency is not optional, since a program might result unusable in practice if it takes too long to produce its output. However, some criteria like portability, modularity, maintainability, … are always useful, but in a sense also optional.
