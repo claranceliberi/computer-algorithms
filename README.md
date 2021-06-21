@@ -182,7 +182,58 @@ Here are some running times for this example:
 |10^6   | ~ 55.5 h          | ~ 5.5 h           |
 |10^9   | ~ 6.3 years       | ~ 8.3 h           |
 
-
+<br>
+<br>
 5. Recurrence equations
+<br>
+    First know that recursive function are functions that call up themselves until certain condition is met, so performance of recursive algorithms typically specified with **recurrence equations**. Recurrence equations require special techniques for solving, when we solve then we actually want to know their complexity since they are not the same at all. 
+    <br>
+    Analyzing Performance of Non-Recursive Routines is (relatively) Easy <br>
+- Loop: $T(n) = \theta(n)$ 
+
+```
+for i in 1 .. n loop
+```
+    
+- Loop: $T(n) = \theta(n^2)$ 
+```
+for i in 1 .. n loop
+    for j in 1 .. n loop
+    end loop;
+end loop;
+```
+
+```
+for i in 1 .. n loop
+    for j in 1 .. i loop
+    end loop;
+end loop;
+```
+
+- Loop: $T(n) = \theta(n^3)$ ... obvious
+
+<br>
+Analyzing Recursive Routines <br>
+
+Analysis of recursive routines is not as easy
+
+Let's look at several: Factorial, Fibonacci,  Binary Search
+Algorithm:
+```
+fac(n)
+    if n = 1 
+        return 1  
+    else
+        return n * fac(n-1)
+```
+    
+For fac(n), how many times is fac called?
+    $T(1) = 1$
+    $T(2) = T(1) + 1 = 2$
+    $T(3) = T(2) + 1 = 3$
+    $T(n) = T(n-1) + 1 $ [Open form]
+    $T(n) = n$ [Guess closed form. Proved by induction below]
+    
+[more](https://www.radford.edu/nokie/classes/360/recurrence.eqns.revised.html)
 6. Amortized complexity
 7. Practical complexities
