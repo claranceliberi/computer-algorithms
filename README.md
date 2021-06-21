@@ -235,5 +235,30 @@ For fac(n), how many times is fac called?
     $T(n) = n$ [Guess closed form. Proved by induction below]
     
 [more](https://www.radford.edu/nokie/classes/360/recurrence.eqns.revised.html)
+
+<br>
+<br>
 6. Amortized complexity
+<br>
+This analysis is used when the occasional operation is very slow, but most of the operations which are executing very frequently are faster. In Data structures we need amortized analysis for Hash Tables, Disjoint Sets etc.
+
+In the Hash-table, the most of the time the searching time complexity is O(1), but sometimes it executes O(n) operations. When we want to search or insert an element in a hash table for most of the cases it is constant time taking the task, but when a collision occurs, it needs O(n) times operations for collision resolution.
+
+**Aggregate Method**
+
+The aggregate method is used to find the total cost. If we want to add a bunch of data, then we need to find the amortized cost by this formula.
+
+For a sequence of n operations, the cost is −
+![image](https://user-images.githubusercontent.com/60586899/122756742-1c340d00-d297-11eb-8d49-d738df4131e9.png)
+
+**Example on Amortized Analysis**
+
+For a dynamic array, items can be inserted at a given index in O(1) time. But if that index is not present in the array, it fails to perform the task in constant time. For that case, it initially doubles the size of the array then inserts the element if the index is present.
+![image](https://user-images.githubusercontent.com/60586899/122756790-2bb35600-d297-11eb-8bab-c7bfe6dc51e5.png)
+
+For the dynamic array, let 𝑐𝑖 = cost of 𝑖𝑡ℎ insertion.
+
+![image](https://user-images.githubusercontent.com/60586899/122756923-4ede0580-d297-11eb-8a9c-82e0693c4f50.png)
+
+
 7. Practical complexities
