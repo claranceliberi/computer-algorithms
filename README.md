@@ -89,6 +89,8 @@ Suprisingly, the time taken to accomplish the task is
 
 as you can see function A with 3 operations took 0 seconds ( not actually 0 in time but there are little microseconds which are rounded to 0) while B with 4 operations took 2.97 seconds
 <br>
+<br>
+
 2. *Step counts*
 <br>
 The step count method is one of the methods to analyze the algorithm, In this method, we count the number of times one instruction is executing
@@ -109,7 +111,7 @@ return sum;                  // 1 step
 }
 ```
 
-but the wait is it actually only 4 steps, while we have some conditional statements and which may iterate, 
+but wait, is it actually only 4 steps, while we have some conditional statements and which may iterate, 
 by iterating the code re-execute them selves according to the number of times possible in the condition 
 means the actual steps should be  
     `(1 step * 1) + (1 step * (N + 1)) + (1 step * N) + (1 step * 1)`  
