@@ -1,3 +1,5 @@
+// hash table implementation
+
 class HashTable{
     constructor(){
         this.table = new Array(127)
