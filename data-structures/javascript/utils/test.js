@@ -6,7 +6,7 @@ module.exports = function test  (cb,output,...args) {
         console.log('OK');
     }
     else{
-        console.log('Failed....', `\t Expected '${output}' but got '${result}'`)
+        console.log('Failed....', `\t Expected '${output}' but got '${result}', with this arguments (${args})`)
     }
     console.timeEnd('Time');
     console.log('\n')
