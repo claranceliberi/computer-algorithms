@@ -3,10 +3,10 @@ module.exports = function test  (cb,output,...args) {
     const result = cb(...args)
     const passed = result === output
     if (passed){
-        console.log('OK');
+        console.log('\033[32mOK', '\033[0m');
     }
     else{
-        console.log('Failed....', `\t Expected '${output}' but got '${result}', with this arguments (${args})`)
+        console.log('\033[31mFailed....','\033[0m' ,`\t Expected '${output}' but got '${result}', with this arguments (${args})`)
     }
     console.timeEnd('Time');
     console.log('\n')
