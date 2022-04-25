@@ -1,14 +1,15 @@
 // hash table implementation
 
 class HashTable{
-    constructor(){
-        this.table = new Array(127)
+    constructor(length){
+        this.table = new Array(length)
         this.size = 0;
     }
 
     _hash(key){
         let hash = 0;
 
+        // loop in kes and 
         for(let i=0 ; i< key.length; i++){
             hash += key.charCodeAt(i)
         }
@@ -39,7 +40,7 @@ class HashTable{
     }
 }
 
-const ht = new HashTable();
+const ht = new HashTable(127);
 ht.set("Canada", 300);
 ht.set("France", 100);
 ht.set("Spain", 110);
