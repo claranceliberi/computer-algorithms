@@ -3,6 +3,7 @@
 
 
 // this involves additional data structure
+// O(N)
 function isUnique(A){
     var hash = {}
 

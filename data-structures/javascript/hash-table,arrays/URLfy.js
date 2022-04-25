@@ -9,11 +9,14 @@
 
 
 
+// O(1) without considering built in functions
+// O(N) considering built in function work
 function URLfy(A){
     return A.trim().split(" ").join("%20")
 }
 
 
+// O(N) 
 function urlify(A,N){
     let s = ''
     const totalSpaces = A.length - N;

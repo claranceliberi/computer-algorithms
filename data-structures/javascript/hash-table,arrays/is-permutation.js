@@ -3,6 +3,7 @@
 
 
 // this one is strick and checks alot of things
+// O(N)
 function isPermutation(A,B){
     let same=0;
 
@@ -28,7 +29,8 @@ function isPermutation(A,B){
 }
 
 // this one ignores capslock, and doesn't care much about  the string are equal
-
+// O(N) by considering builtin function work (becourse split and join have loop inside of them)
+// O(1) without considering  built in functions
 function isPermutation2(A,B){
     if(A.length != B.length)
         return false;
