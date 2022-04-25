@@ -21,6 +21,7 @@ var printMatrix = function(matrix) {
     }
   };
 
+// O(N^2)
 function zeroMatrix(matrix){
     let rowWithZero = new Set();
     let colWithZero = new Set();
