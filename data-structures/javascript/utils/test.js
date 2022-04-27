@@ -1,6 +1,6 @@
-module.exports = function test  (cb,output,...args) {
+module.exports = function test(cb,output,...args) {
     console.time('Time');
-    const result = cb(...args)
+    const result = !!args ? cb(...args) : cb()
     const passed = result === output
     if (passed){
         console.log('\033[32mOK', '\033[0m');
