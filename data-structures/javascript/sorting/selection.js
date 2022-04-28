@@ -11,27 +11,22 @@ so the array looks like [1,2,5,3,6,4]
 and since element at index 0 is sorted, the first element of the unsorted array is 1 which points to `2`
 */
 
+
+// O(N^2)
 function sort(A){
-    let smallest = Number.MAX_SAFE_INTEGER;
     let smallesIndex = -1;
-    let temp = 0;
 
     for(let i=0; i< A.length; i++){
+        smallesIndex = i
 
         // find the smallest number
         for(let j=i; j < A.length; j++)
-            if(A[j] < smallest){
-                smallest = A[j]
+            if(A[j] < A[smallesIndex]){
                 smallesIndex = j
             }
 
         // swapp the found numbers
-        temp = A[i]
-        A[i] = smallest
-        A[smallesIndex] = temp;
-
-        // reset smallest
-        smallest = Number.MAX_SAFE_INTEGER;
+        [A[i],A[smallesIndex] ]= [A[smallesIndex],A[i]]
     }
 
     return A;
