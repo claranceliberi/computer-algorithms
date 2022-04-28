@@ -13,7 +13,7 @@ and since element at index 0 is sorted, the first element of the unsorted array 
 
 
 // O(N^2)
-function sort(A){
+function selectionSort(A){
     let smallesIndex = -1;
 
     for(let i=0; i< A.length; i++){
@@ -33,6 +33,6 @@ function sort(A){
 }
 
 
-console.log(sort([5,2,1,3,6,4]))
-console.log(sort([5,9,8,2,1,7,3,6,4]))
-console.log(sort([5291,20,1000,32,61,400]))
+console.log(selectionSort([5,2,1,3,6,4]))
+console.log(selectionSort([5,9,8,2,1,7,3,6,4]))
+console.log(selectionSort([5291,20,1000,32,61,400]))
