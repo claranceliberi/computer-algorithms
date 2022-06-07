@@ -5,6 +5,9 @@ class Stack{
         this.items = []
     }
 
+    size(){
+        return this.items.length
+    }
     pop(){
         return this.items.pop()
     }
