@@ -46,6 +46,7 @@ vector<int> insertionSort(vector<int> array){
     return array;
 }
 
+
 int main(){
     // vector<int> array = {3,2,4,5,1,0,100,3,44,54,10};
     vector<int> array = {3,2,4,5,1,0,100,-2,3,-6,-22,44,54,10};
